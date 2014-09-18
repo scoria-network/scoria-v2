@@ -11,9 +11,9 @@ use Rack::Cors do
 end
 
 map '/' do
-  run SCORIA::Web
+  run Scoria::Web
 end
 
 map '/api' do
-  run SCORIA::API
+  run Scoria::API
 end
