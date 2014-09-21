@@ -19,7 +19,7 @@ class Scoria
       get '/get_posts' do
         num_posts = params[:key].to_i
 
-        return Post[-num_posts..-1]
+        return get_posts num_posts
       end
 
       get '/test' do
