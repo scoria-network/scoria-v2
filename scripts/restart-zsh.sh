@@ -1,0 +1,2 @@
+$SCORIA_HOME_DIR$SCORIA_WORKING_DIR'scripts/stop.sh'
+$SCORIA_HOME_DIR$SCORIA_WORKING_DIR'scripts/start-zsho.sh'
