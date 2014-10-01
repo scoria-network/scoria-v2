@@ -13,6 +13,10 @@ class User
   include DataMapper::Resource
 
   property :id, Serial
+  property :primary_email, String
+  property :first_name, String
+  property :last_name, String
+  property :password, String
 end
 
 class Post

@@ -56,6 +56,9 @@ body {
 .form-register {
   margin-top: 11px;
 }
+.register form {
+    margin-bottom: 0px;
+}
 .form-changepw {
   margin-top: 5px;
 }

@@ -1,0 +1,13 @@
+<div class="pane register right">
+  Sign up for Scoria
+  <form></form><!-- without this form, the next form doesn't appear. No clue why -->
+  <form action="/api/create_user" method="post">
+    <input type="text" class="form-control form-register" name="first_name" placeholder="First Name" style="width:180; display:inline;">
+    <input type="text" class="form-control form-register" name="last_name" placeholder="Last Name" style="width:180; display:inline; float:right;">
+    <br>
+    <input type="text" name="email" class="form-control form-register" placeholder="Your email address">
+    <input type="password" name="password" class="form-control form-register" placeholder="Password" style="width:180; display:inline;" autocomplete='off'>
+    <input type="password" name="cpassword" class="form-control form-register" placeholder="Re-enter Password" style="width:180; display:inline; float:right;" autocomplete='off'>
+    <input type="submit" class="btn btn-primary form-register" style="width:100%" value="Create account" autocomplete='off'>
+  </form>
+</div>

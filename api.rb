@@ -21,10 +21,19 @@ class Scoria
 
         return get_posts num_posts
       end
+    end
 
-      get '/test' do
-        return "test"
-      end
+    params do
+      requires :email, :type => String, :desc => 'email address'
+      requires :first_name, :type => String, :desc => 'first name'
+      requires :last_name, :type => String, :desc => 'last name'
+      requires :password, :type => String, :desc => 'password'
+    end
+    post '/create_user' do
+      User.create :primary_email => params[:email],
+                  :first_name    => params[:first_name],
+                  :last_name     => params[:last_name],
+                  :password      => params[:password]
     end
   end
 end
