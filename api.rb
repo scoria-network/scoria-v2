@@ -28,12 +28,14 @@ class Scoria
       requires :first_name, :type => String, :desc => 'first name'
       requires :last_name, :type => String, :desc => 'last name'
       requires :password, :type => String, :desc => 'password'
+      requires :cpassword, :type => String, :desc => 'password confirmation'
     end
     post '/create_user' do
-      User.create :primary_email => params[:email],
-                  :first_name    => params[:first_name],
-                  :last_name     => params[:last_name],
-                  :password      => params[:password]
+      create_user params[:email],
+                  params[:first_name],
+                  params[:last_name],
+                  params[:password],
+                  params[:cpassword]
     end
   end
 end
