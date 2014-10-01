@@ -1,6 +1,6 @@
 body {
-  padding-top: 20px;
-  background-color: f5f5fa
+    padding-top: 20px;
+    background-color: f5f5fa
 }
 
 /* div {position:absolute;} 
@@ -10,74 +10,77 @@ body {
 .upper-right-cp {top:5px; right:5px; width:200px; height:30px;}
 .username {position:relative;} */
 .pane {
-  background-color: #fcfcff;
-  border:1px solid #e5e5e5;
- -webkit-border-radius: 5px;
- -moz-border-radius: 5px;
- border-radius: 5px;
- -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
- -moz-box-shadow: 0 1px 2px rgba(0,0,0,.0);
- margin-bottom: 5px;
+    background-color: #fcfcff;
+    border:1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.0);
+    margin-bottom: 5px;
 }
 .full {
-  width:800px;
-  margin-left:auto; 
-  margin-right:auto;
+    width:800px;
+    margin-left:auto; 
+    margin-right:auto;
 }
 .left {
-  float: left;
-  margin-right: 6px;
+    float: left;
+    margin-right: 6px;
 }
 .content {
-  width: 400px;
-  padding: 10px;
-  float: left;
+    width: 400px;
+    padding: 10px;
+    float: left;
 }
 .content-container {
-  width: 400px;
-  padding: 0px;
-  float: left;
+    width: 400px;
+    padding: 0px;
+    float: left;
 }
 .right {
-  float: right;
-  margin-left: 5px;
+    float: right;
+    margin-left: 5px;
 }
 .side {
-  width: 194px;
-  padding: 10px;
+    width: 194px;
+    padding: 10px;
 }
 .side-container {
-  width: 194px;
+    width: 194px;
 }
 .register {
-  width: 395px;
-  padding: 11px;
+    width: 395px;
+    padding: 11px;
 }
 .form-register {
-  margin-top: 11px;
+    margin-top: 11px;
 }
 .register form {
     margin-bottom: 0px;
 }
 .form-changepw {
-  margin-top: 5px;
+    margin-top: 5px;
 }
 .post-comment {
-  margin-top:5px;
-  float:right;
+    margin-top:5px;
+    float:right;
 }
 .btn-friend-req {
-  margin-top:5px;
+    margin-top:5px;
 }
 .navbar {
-  margin-bottom: 5;
+    margin-bottom: 5px;
+}
+.navbar form {
+    padding-right: 11px;
 }
 .table-striped > tbody > tr:nth-child(odd) > td,
 .table-striped > tbody > tr:nth-child(odd) > th {
-  background-color: #f5f5fa;
+    background-color: #f5f5fa;
 }
 .btn-default {
-/*  background-color: #fcfcff; */
+    /*  background-color: #fcfcff; */
 }
 table {
     table-layout: fixed;

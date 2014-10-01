@@ -37,5 +37,13 @@ class Scoria
                   params[:password],
                   params[:cpassword]
     end
+
+    params do
+      requires :email, :type => String, :desc => 'email address'
+      requires :password, :type => String, :desc => 'password'
+    end
+    post '/login' do
+      'log in, bruh'
+    end
   end
 end
