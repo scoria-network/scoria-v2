@@ -42,8 +42,8 @@ class Scoria
       requires :email, :type => String, :desc => 'email address'
       requires :password, :type => String, :desc => 'password'
     end
-    post '/login' do
-      'log in, bruh'
+    post '/log_in' do
+      log_in params[:email], params[:password]
     end
   end
 end
