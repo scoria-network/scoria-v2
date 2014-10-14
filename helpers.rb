@@ -24,3 +24,13 @@ def create_user primary_email, first_name, last_name, password, cpassword
               :last_name     => last_name,
               :password      => password
 end
+
+def log_in email, password
+  u = User.first :primary_email => email
+
+  if u.password = password
+    # !!
+  end
+
+  session
+end

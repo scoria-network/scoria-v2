@@ -3,6 +3,8 @@ require 'rack/cors'
 require './app'
 require './api'
 
+enable :sessions
+
 use Rack::Cors do
   allow do
     origins '*'
