@@ -1,8 +1,12 @@
-home = ENV['SCORIA_HOME_DIR']
-working = ENV['SCORIA_WORKING_DIR']
-procs = ENV['SCORIA_PROCESSES'].to_i
+require 'yaml'
 
-@dir = "#{home}#{working}"
+config = YAML.load_file('config.yml')
+
+procs = config['procs'].to_i
+
+@dir = config['dir']
+
+#@dir = "#{home}#{working}"
 
 worker_processes procs
 working_directory @dir

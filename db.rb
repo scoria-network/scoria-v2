@@ -1,11 +1,14 @@
 require 'dm-mysql-adapter'
 require 'dm-timestamps'
 require 'data_mapper'
+require 'yaml'
 
-username = ENV['SCORIA_USERNAME']
-password = ENV['SCORIA_PASSWORD']
-host     = ENV['SCORIA_HOST']
-database = ENV['SCORIA_DATABASE']
+config = YAML.load_file('db_config.yml')
+
+username = config['username']
+password = config['password']
+host     = config['host']
+database = config['database']
 
 DataMapper.setup :default, "mysql://#{username}:#{password}@#{host}/#{database}"
 
